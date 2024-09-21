@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Music Player</title>
+</head>
+<body>
+
+    <audio src="" id="audio-source"></audio>
+    
+    <!-- home -->
+    <section class="home-section">
+
+        <!-- carousel -->
+        <div class="carousel">
+            <img src="/assets/images/cover 1.png" class="active" alt="">
+            <img src="/assets/images/cover 2.png" alt="">
+            <img src="/assets/images/cover 3.png" alt="">
+            <img src="/assets/images/cover 4.png" alt="">
+            <img src="/assets/images/cover 5.png" alt="">
+        </div>
+        <!-- end of carousel -->
+
+        <!-- playlist -->
+        <h1 class="heading">Favorites</h1>
+        <div class="playlists-group">
+            <div class="playlist-card">
+                <img src="/assets/images/cover 10.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Minister Dunsin</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="/assets/images/cover 10.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Pastor Nath</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="/assets/images/cover 10.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Most Played</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="/assets/images/cover 10.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Most Played</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="/assets/images/cover 10.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Most Played</p>
+            </div>
+        </div>
+
+        <h1 class="heading">Playlists</h1>
+        <div class="playlists-group">
+            <div class="playlist-card">
+                <img src="/assets/images/cover 11.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Gospel</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="/assets/images/cover 11.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Praise</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="/assets/images/cover 11.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Most Played</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="/assets/images/cover 11.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Most Played</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="/assets/images/cover 11.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Most Played</p>
+            </div>
+        </div>
+        <!-- end of playlist -->
+
+        <!-- music player controls-->
+        <section class="music-player-section">
+
+            <img src="/assets/images/back.png" class="back-btn icon hide" alt="back button">
+            <img src="/assets/images/nav.png" class="nav-btn icon hide" alt="nav icon">
+
+            <h1 class="current-song-title">Offered to a Deity</h1>
+            <p class="artist-name hide">Theophilus Sunday</p>
+
+            <img src="/assets/images/cover 13.png" class="music-cover hide" alt="now playing">
+
+            <div class="progress-bar-container">
+                <input type="range" class="music-progress-bar" value="0">
+                <p class="current-time hide">00 : 00</p>
+                <p class="duration hide">00 : 00</p>
+            </div>
+
+            <!-- controls -->
+            <div class="music-controls">
+
+                <span class="fa-solid fa-rotate-right"></span>
+
+                <div class="main">
+                    <i class="fa-solid fa-backward active"></i>
+                    <i class="fa-solid fa-play active"></i>
+                    <i class="fa-solid fa-pause"></i>
+                    <i class="fa-solid fa-forward active"></i>
+                </div>
+
+                <input type="range" max="1" value="1" step="0.1" class="volume-slider">
+                <span class="fa-solid fa-volume-high"></span>
+            </div>
+
+        </section>
+        <!-- music player controls -->
+
+        <!-- songs list -->
+        <section class="songs-section">
+
+            <img src="/assets/images/back.png" class="back-btn icon hide" alt="back button">
+
+            <h1 class="song-title">Music</h1>
+
+            <div class="songs-queue active">
+
+                <div class="queue-cover">
+                    <img src="assets/images/cover 9.png" alt="song-img">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <p class="song-name">Offered to a Deity</p>
+
+            </div>
+
+            <div class="songs-queue">
+                
+                <div class="queue-cover">
+                    <img src="assets/images/cover 9.png" alt="song-img">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <p class="song-name">No Me Without you</p>
+
+            </div>
+
+            <div class="songs-queue">
+                
+                <div class="queue-cover">
+                    <img src="assets/images/cover 9.png" alt="song-img">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <p class="song-name">Worthy of my praise</p>
+
+            </div>
+
+            <div class="songs-queue">
+                
+                <div class="queue-cover">
+                    <img src="assets/images/cover 9.png" alt="song-img">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <p class="song-name">Do to me what you want</p>
+
+            </div>
+
+            <div class="songs-queue">
+                
+                <div class="queue-cover">
+                    <img src="assets/images/cover 9.png" alt="song-img">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <p class="song-name">Yahweh - Labisi</p>
+
+            </div>
+
+            <div class="songs-queue">
+                
+                <div class="queue-cover">
+                    <img src="assets/images/cover 9.png" alt="song-img">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <p class="song-name">Dance Anyhow</p>
+
+            </div>
+
+            <div class="songs-queue">
+                
+                <div class="queue-cover">
+                    <img src="assets/images/cover 9.png" alt="song-img">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+                <p class="song-name">Nathaniel Bassey - 82Hours MMP</p>
+
+            </div>
+
+        </section>
+        <!-- songs list -->
+
+    </section>
+
+    <script src="/data.js"></script>
+    <script src="/index.js"></script>
+
+</body>
+</html>
